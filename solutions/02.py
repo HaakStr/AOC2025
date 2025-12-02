@@ -31,5 +31,9 @@ for start, end in ranges:
         if is_a_number_repeated_atleast_twice(number_string):
             invalid_number_sum_2 += n
 
-print(f"Part 1: {invalid_number_sum}")
-print(f"Part 2: {invalid_number_sum_2}")
+print("\n🎄 ======================================= 🎄")
+print(f"   ⭐ Day {2:02d} Results ⭐")
+print("🎄 ======================================= 🎄")
+print(f"   🎁 Part 1: {invalid_number_sum}")
+print(f"   🎁 Part 2: {invalid_number_sum_2}")
+print("🎄 ======================================= 🎄\n")

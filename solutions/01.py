@@ -25,5 +25,9 @@ def simulate_dial(dial_instructions: list[tuple[str, int]], step_by_step=False) 
     return times_the_dial_is_zero
 
 
-print(f"Part 1: {simulate_dial(instructions, step_by_step=False)}")
-print(f"Part 2: {simulate_dial(instructions, step_by_step=True)}")
+print("\n🎄 ======================================= 🎄")
+print(f"   ⭐ Day {1:02d} Results ⭐")
+print("🎄 ======================================= 🎄")
+print(f"   🎁 Part 1: {simulate_dial(instructions, step_by_step=False)}")
+print(f"   🎁 Part 2: {simulate_dial(instructions, step_by_step=True)}")
+print("🎄 ======================================= 🎄\n")
