@@ -91,7 +91,9 @@ for bank in lines:
     twelve_digit_number_sum += get_biggest_k_digit_number(bank, 12)
 
 print("\n🎄 ======================================= 🎄")
-print(f"   ⭐ Day {2:02d} Results ⭐")
+print(
+    f"   ⭐ Day {int(__file__.rsplit('\\', maxsplit=1)[-1].split(".")[0]):02d} Results ⭐"
+)
 print("🎄 ======================================= 🎄")
 print(f"   🎁 Part 1: {two_digit_number_sum}")
 print(f"   🎁 Part 2: {twelve_digit_number_sum}")

@@ -59,7 +59,9 @@ def part2():
 
 
 print(f"\n🎄 {"="*40} 🎄")
-print(f"   ⭐ Day {2:02d} Results ⭐")
+print(
+    f"   ⭐ Day {int(__file__.rsplit('\\', maxsplit=1)[-1].split(".")[0]):02d} Results ⭐"
+)
 print(f"🎄 {"="*40} 🎄")
 print(f"   🎁 Part 1: {part1()}")
 print(f"   🎁 Part 2: {part2()}")

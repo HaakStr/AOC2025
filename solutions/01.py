@@ -26,7 +26,9 @@ def simulate_dial(dial_instructions: list[tuple[str, int]], step_by_step=False) 
 
 
 print("\n🎄 ======================================= 🎄")
-print(f"   ⭐ Day {1:02d} Results ⭐")
+print(
+    f"   ⭐ Day {int(__file__.rsplit('\\', maxsplit=1)[-1].split(".")[0]):02d} Results ⭐"
+)
 print("🎄 ======================================= 🎄")
 print(f"   🎁 Part 1: {simulate_dial(instructions, step_by_step=False)}")
 print(f"   🎁 Part 2: {simulate_dial(instructions, step_by_step=True)}")
