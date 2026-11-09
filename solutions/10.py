@@ -1,7 +1,8 @@
 from collections import deque
 from dataclasses import dataclass
-from scipy.optimize import milp, LinearConstraint, Bounds
+
 import numpy as np
+from scipy.optimize import Bounds, LinearConstraint, milp
 
 
 @dataclass
@@ -77,7 +78,7 @@ def reduce_machine_for_joltage(
     old_to_new = {old: new for new, old in enumerate(important_indices)}
 
     new_buttons = [
-        tuple(sorted(set(old_to_new[i] for i in btn if i in old_to_new)))
+        tuple(sorted({old_to_new[i] for i in btn if i in old_to_new}))
         for btn in [tuple(btn) for btn in machine.buttons]
         if any(i in old_to_new for i in btn)
     ]
@@ -122,11 +123,11 @@ def part2():
     return sum(fewest_presses_with_joltage(machine) for machine in machines)
 
 
-print(f"\n🎄 {"="*40} 🎄")
+print(f"\n🎄 {'=' * 40} 🎄")
 print(
-    f"   ⭐ Day {int(__file__.rsplit('\\', maxsplit=1)[-1].split(".")[0]):02d} Results ⭐"
+    f"   ⭐ Day {int(__file__.rsplit('\\', maxsplit=1)[-1].split('.')[0]):02d} Results ⭐"
 )
-print(f"🎄 {"="*40} 🎄")
+print(f"🎄 {'=' * 40} 🎄")
 print(f"   🎁 Part 1: {part1()}")
 print(f"   🎁 Part 2: {part2()}")
-print(f"🎄 {"="*40} 🎄\n")
+print(f"🎄 {'=' * 40} 🎄\n")

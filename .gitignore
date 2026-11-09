@@ -209,5 +209,5 @@ __marimo__/
 # Input folder
 input/
 
-# Poetry lock file
-poetry.lock
+# uv lock file
+uv.lock

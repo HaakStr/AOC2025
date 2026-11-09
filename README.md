@@ -6,4 +6,14 @@ EDIT 2025-12-10: Yeah, Dec 10 forced my hand. It now requires:
 
 - scipy
 - numpy
-- Python 3.11 or higher.
+- Python 3.12 or higher.
+
+
+# Setup
+
+```powershell
+uv sync
+uv run python solutions\01.py
+uv run ruff format .
+uv run ruff check .
+```

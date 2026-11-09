@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from itertools import combinations
+from itertools import combinations, pairwise
 
 with open("input/09.txt", encoding="utf8") as f:
     lines = f.read().splitlines()
@@ -38,7 +38,7 @@ def get_bands() -> list[Band]:
     vertical_edges = get_vertical_edges()
     ys = sorted({y for _, y, _ in vertical_edges})
 
-    for y_from, y_next in zip(ys, ys[1:]):
+    for y_from, y_next in pairwise(ys):
         y_to = y_next - 1
         if y_from > y_to:
             continue
@@ -103,11 +103,11 @@ def part2():
     )
 
 
-print(f"\n🎄 {"="*40} 🎄")
+print(f"\n🎄 {'=' * 40} 🎄")
 print(
-    f"   ⭐ Day {int(__file__.rsplit('\\', maxsplit=1)[-1].split(".")[0]):02d} Results ⭐"
+    f"   ⭐ Day {int(__file__.rsplit('\\', maxsplit=1)[-1].split('.')[0]):02d} Results ⭐"
 )
-print(f"🎄 {"="*40} 🎄")
+print(f"🎄 {'=' * 40} 🎄")
 print(f"   🎁 Part 1: {part1()}")
 print(f"   🎁 Part 2: {part2()}")
-print(f"🎄 {"="*40} 🎄\n")
+print(f"🎄 {'=' * 40} 🎄\n")

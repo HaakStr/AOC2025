@@ -33,7 +33,7 @@ for start, end in ranges:
 
 print("\n🎄 ======================================= 🎄")
 print(
-    f"   ⭐ Day {int(__file__.rsplit('\\', maxsplit=1)[-1].split(".")[0]):02d} Results ⭐"
+    f"   ⭐ Day {int(__file__.rsplit('\\', maxsplit=1)[-1].split('.')[0]):02d} Results ⭐"
 )
 print("🎄 ======================================= 🎄")
 print(f"   🎁 Part 1: {invalid_number_sum}")

@@ -42,8 +42,8 @@ def solve_the_puzzle(inputs: list[str]) -> int:
 with open("input/12.txt", encoding="utf-8") as f:
     lines = f.read().splitlines()
 
-print(f"\n🎄 {"=" * 40} 🎄")
+print(f"\n🎄 {'=' * 40} 🎄")
 print("   ⭐ Day 12 (But sneaky) Results ⭐")
-print(f"🎄 {"=" * 40} 🎄")
+print(f"🎄 {'=' * 40} 🎄")
 print(f"   🎁 Today's answer is: {solve_the_puzzle(lines)}")
-print(f"🎄 {"=" * 40} 🎄\n")
+print(f"🎄 {'=' * 40} 🎄\n")

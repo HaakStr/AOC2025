@@ -87,11 +87,11 @@ def part2():
     return xyz_coords[i][0] * xyz_coords[j][0]
 
 
-print(f"\n🎄 {"="*40} 🎄")
+print(f"\n🎄 {'=' * 40} 🎄")
 print(
-    f"   ⭐ Day {int(__file__.rsplit('\\', maxsplit=1)[-1].split(".")[0]):02d} Results ⭐"
+    f"   ⭐ Day {int(__file__.rsplit('\\', maxsplit=1)[-1].split('.')[0]):02d} Results ⭐"
 )
-print(f"🎄 {"="*40} 🎄")
+print(f"🎄 {'=' * 40} 🎄")
 print(f"   🎁 Part 1: {part1()}")
 print(f"   🎁 Part 2: {part2()}")
-print(f"🎄 {"="*40} 🎄\n")
+print(f"🎄 {'=' * 40} 🎄\n")
